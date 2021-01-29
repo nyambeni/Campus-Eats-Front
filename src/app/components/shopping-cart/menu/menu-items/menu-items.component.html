@@ -1,0 +1,19 @@
+
+<div class="card md-4 shadow-sm">
+    <img class="imageClass" width="100%" [src]="menuItem.imagePath">
+
+    <div class="card-body">
+      <p class="card-text">{{menuItem.ingredients}}</p>
+      <div class="d-flex justify-content-between align-items-center">
+         
+        <div class="btn-group">
+          <button type="button" 
+          style="white-space:normal;" 
+          class="btn btn-sm btn-outline-secondary active"
+          (click)="addToCart()" >Add to cart</button>
+        </div>
+        
+        <small class="text-muted">{{ menuItem.price | currency: 'R' }}</small>
+      </div>
+    </div>
+  </div>
