@@ -1,5 +1,5 @@
 <div class="cart-item">
 <span>{{itemsInCart.itemName}}</span>:
 <span>{{itemsInCart.qty}}</span> : 
-<strong>{{itemsInCart.qty * itemsInCart.price | currency: 'R'}}</strong>
+<strong>{{ (itemsInCart.qty * itemsInCart.price) | currency: 'R'}}</strong>
 </div>

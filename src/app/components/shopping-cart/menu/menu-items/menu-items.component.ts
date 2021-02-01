@@ -10,8 +10,7 @@ import { CartRelayService} from 'src/app/services/cart-relay.service';
 })
 export class MenuItemsComponent implements OnInit {
 
-  @Input()
-  menuItem!: Menu;
+  @Input() menuItem: any;
 
   
   constructor(private relay : CartRelayService) { }
